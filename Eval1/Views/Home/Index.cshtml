@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Eval1.Models.Trainee>
+
+<a asp-action="Create">Create</a>
+
+
+<table class="table table-striped">
+    <tr>
+       
+        <th>TraineeName</th>
+        <th>Location</th>
+        <th>Points</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+           
+            <td>@item.TraineeName</td>
+            <td>@item.Location</td>
+            <td>@item.Points</td>
+            <td>@item.Description</td>
+        </tr>
+    }
+</table>
